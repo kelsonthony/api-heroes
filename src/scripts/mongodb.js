@@ -6,6 +6,12 @@
     show collections
     
  */
+db.createUser({
+    user: 'herouser',
+    pwd: 'passwordwordheroes',
+    roles: [{role: 'readWrite', db: 'heroesdb'}]
+})
+
 db.herois.insert({
     nome: 'Superman',
     poder: 'Força',
